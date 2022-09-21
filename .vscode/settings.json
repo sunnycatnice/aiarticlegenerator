@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/opt/homebrew/bin/python3.10",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.10",
+    "git.ignoreLimitWarning": true
+}
