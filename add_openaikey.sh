@@ -23,16 +23,20 @@ done
 
 if ! grep -q "OPENAI_API_KEY" ~/.zshrc; then
     echo "OPENAI_API_KEY not found in ~/.zshrc, adding it...\n"
-    echo "export OPENAI_API_KEY=$KEY" >> ~/.zshrc
+    printf "\nexport OPENAI_API_KEY=$KEY" >> ~/.zshrc
+    #echo with green color key added!
+    echo -e "\e[32mKey added!\e[0m\n"
 else
-    echo "OPENAI_API_KEY found in ~/.zshrc, check if it's a functioning key...\n"
+    echo "OPENAI_API_KEY found in ~/.zshrc, make sure to check if it's a functioning key!\n"
 fi
 
 if ! grep -q "OPENAI_API_KEY" ~/.bashrc; then
     echo "OPENAI_API_KEY not found in ~/.bashrc, adding it...\n"
-    echo "export OPENAI_API_KEY=$KEY" >> ~/.bashrc;
+    printf "\nexport OPENAI_API_KEY=$KEY" >> ~/.bashrc;
+    #echo with green color key added!
+    echo -e "\e[32mKey added!\e[0m\n"
 else
-    echo "OPENAI_API_KEY found in ~/.bashrc, check if it's a functioning key...\n"
+    echo "OPENAI_API_KEY found in ~/.bashrc, make sure to check if it's a functioning key!\n"
 fi
 
-source ~/.zshrc; source ~/.bashrc
+source ~/.zshrc; source ~/.bashrc; exec zsh
