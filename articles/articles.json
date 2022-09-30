@@ -1,0 +1,30 @@
+{
+    "articles":{
+        "article1": {
+            "title": "Review: Apple iPhone 14 Pro and iPhone 14 Pro Max",
+            "headline": "These are expensive and great handsets, but the upgrades are not dramatic.",
+            "date": "date1",
+            "content": "iphone14pm.txt",
+            "url": "url1",
+            "images": "image1"
+        },
+        "article2": {
+            "title": "title2",
+            "headline": "headline2",
+            "author": "author2",
+            "date": "date2",
+            "content": "content2",
+            "url": "url2",
+            "image": "image2"
+        },
+        "article3": {
+            "title": "title3",
+            "headline": "headline3",
+            "author": "author3",
+            "date": "date3",
+            "content": "content3",
+            "url": "url3",
+            "image": "image3"
+        }
+    }
+}

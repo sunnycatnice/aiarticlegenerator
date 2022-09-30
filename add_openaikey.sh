@@ -12,6 +12,15 @@ else
     KEY=$1
 fi
 
+#check if the key is valid, by checking if it starts with sk-
+#use a for loop to ask for the key again if it is not valid
+while [[ $KEY != sk-* ]]
+do
+    echo "The key is not valid, please try again"
+    echo -n "Please enter your OpenAI key: "
+    read KEY
+done
+
 if ! grep -q "OPENAI_API_KEY" ~/.zshrc; then
     echo "OPENAI_API_KEY not found in ~/.zshrc, adding it...\n"
     echo "export OPENAI_API_KEY=$KEY" >> ~/.zshrc
